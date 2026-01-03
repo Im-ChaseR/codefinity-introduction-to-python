@@ -7,7 +7,8 @@ inventory = {
 }
 
 discount_threshold = 100
-print(inventory)
+#Debug initial print
+#print(inventory)
 print("Stock Processing Started...")
 for item in inventory:
     current_stock, min_stock, restock_amount, on_sale = inventory[item]
@@ -18,5 +19,7 @@ for item in inventory:
     inventory[item][0] = current_stock
     if current_stock > discount_threshold:
         inventory[item][3] = True
-    print("Processing completed")
-print(inventory)
+print("Processing completed")
+
+#Debug Print   
+#print(inventory)
